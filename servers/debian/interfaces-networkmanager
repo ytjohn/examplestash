@@ -1,0 +1,5 @@
+# Debian/ Ubuntu /etc/network/interfaes file as 
+# controlled by Network Manager
+auto lo
+iface lo inet loopback
+

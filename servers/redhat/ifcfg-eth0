@@ -1,0 +1,9 @@
+# /etc/sysconfig/network-scripts/ifcfg-eth0 
+DEVICE="eth0"
+BOOTPROTO="dhcp"
+# adding DHCP_HOSTNAME gives our hostname to the dhcp
+# server, which could be used for dynamic dns updates
+DHCP_HOSTNAME="example1"
+HWADDR="00:50:56:BD:00:0F"
+NM_CONTROLLED="yes"
+ONBOOT="yes"

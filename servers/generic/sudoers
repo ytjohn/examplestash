@@ -1,0 +1,14 @@
+## Allows people in group wheel to run all commands
+%wheel	ALL=(ALL)		ALL
+%sudo	ALL=(ALL)		ALL
+
+## Same thing without a password
+%bigadmins	ALL=(ALL)	NOPASSWD: ALL
+
+## Allows members of the users group to mount and unmount the 
+## cdrom as root
+%users  ALL=/sbin/mount /mnt/cdrom, /sbin/umount /mnt/cdrom
+
+## Allows members of the users group to shutdown this system
+%users  localhost=/sbin/shutdown -h now
+
